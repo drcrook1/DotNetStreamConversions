@@ -3,7 +3,7 @@ Write-Host "#           Deploy Starting        #" -ForegroundColor Green
 Write-Host "####################################" -ForegroundColor Green
 
 Write-Host "Creating Service Principal For Deploy..." -ForegroundColor White
-$SUBSCRIPTION_ID = "fdeb6cd6-9cac-474d-ad6b-d2000b9b0e0c"
+$SUBSCRIPTION_ID = "#######################"
 
 az account set --subscription=$SUBSCRIPTION_ID
 $sp_result = az ad sp create-for-rbac --name dacrook-terraform | ConvertFrom-Json
