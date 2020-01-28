@@ -9,4 +9,10 @@
     <ProjectReference Include="..\StreamCon.Core\StreamCon.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="dockerfile">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
