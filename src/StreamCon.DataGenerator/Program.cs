@@ -1,6 +1,7 @@
 ﻿using StreamCon.Core;
 using StreamCon.Core.DataModels;
 using System;
+using System.Threading.Tasks;
 
 namespace StreamCon.DataGenerator
 {
@@ -11,9 +12,12 @@ namespace StreamCon.DataGenerator
             Device myDevice = new Device();
             myDevice.SerialNumber = "1";
 
-            Console.WriteLine($"{myDevice.SerialNumber}");
+            while (true)
+            {
+                Console.WriteLine($"{myDevice.SerialNumber}");
+                Task.Delay(2000).Wait();
+            }
 
-            Console.ReadKey();
         }
     }
 }
